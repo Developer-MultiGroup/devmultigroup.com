@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -35,6 +36,46 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Etkinlikler
+          </a>
+        </div>
+        
+        {/* Social Media Links */}
+        <div className="flex gap-6 items-center justify-center mt-8">
+          <a
+            href="https://www.instagram.com/devmultigroup/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-gray-400 hover:text-pink-500 transition-colors duration-200 transform hover:scale-110"
+            aria-label="Follow us on Instagram"
+          >
+            <FaInstagram size={24} />
+          </a>
+          <a
+            href="https://twitter.com/devmultigroup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-gray-400 hover:text-blue-400 transition-colors duration-200 transform hover:scale-110"
+            aria-label="Follow us on Twitter"
+          >
+            <FaTwitter size={24} />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/developermultigroup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-gray-400 hover:text-blue-600 transition-colors duration-200 transform hover:scale-110"
+            aria-label="Connect with us on LinkedIn"
+          >
+            <FaLinkedin size={24} />
+          </a>
+          <a
+            href="https://www.youtube.com/@devmultigroup"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-600 dark:text-gray-400 hover:text-red-500 transition-colors duration-200 transform hover:scale-110"
+            aria-label="Subscribe to our YouTube channel"
+          >
+            <FaYoutube size={24} />
           </a>
         </div>
       </main>
