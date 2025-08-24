@@ -1,3 +1,4 @@
+import AsciiCube from "@/components/ascii-cube";
 import Image from "next/image";
 import { FaInstagram, FaTwitter, FaLinkedin, FaYoutube } from "react-icons/fa";
 
@@ -5,7 +6,6 @@ export default function Home() {
   return (
     <div className="font-sans flex flex-col items-center justify-center min-h-screen p-8">
       <main className="flex flex-col gap-8 items-center text-center">
-        
         {/* DMG Logo */}
         <div className="mb-8">
           <Image
@@ -16,9 +16,10 @@ export default function Home() {
             className="rounded-lg"
           />
         </div>
-        
 
-        <p className="text-xl text-gray-600 dark:text-gray-300 italic">"Where Developers Become Together"</p>
+        <p className="text-xl text-gray-600 dark:text-gray-300 italic">
+          "Where Developers Become Together"
+        </p>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row mt-8">
           <a
@@ -38,7 +39,16 @@ export default function Home() {
             Etkinlikler
           </a>
         </div>
-        
+
+        {/* <AsciiCube
+          imageSrc="/logo-wp-single(1).png"
+          cols={140}
+          rows={70}
+          charRamp="@%#*+=-:. "
+          edgeChar="+"
+          autorotate
+        /> */}
+
         {/* Social Media Links */}
         <div className="flex gap-6 items-center justify-center mt-8">
           <a
